@@ -1,0 +1,41 @@
+/* 
+1. Faça um Programa que peça dois números e imprima o maior deles.
+
+*/
+
+
+import java.util.Scanner;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println(" Digite dois números inteiros a sua escolha e aguarde que o programa vai falar qual é o maior ");
+		
+		int primeiro = scan.nextInt();
+		
+		int segundo = scan.nextInt();
+		
+		if (primeiro > segundo){
+			System.out.println("O primero é maior que o segundo 2");
+			
+		} 
+		
+		else if (segundo > primeiro ) {
+			System.out.println(" O segundo é maior que o primero ");
+			
+			
+		}
+		else {
+			System.out.println("Os números são iguais");
+		}
+		}
+		
+		
+	
+
+	}
+

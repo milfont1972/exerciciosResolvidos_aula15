@@ -1,0 +1,46 @@
+/*
+6. Faça um Programa que leia três números e mostre o maior deles. 
+
+*/
+
+
+// este programa recebe 3 números e informa qual deles é o maior
+
+
+import java.util.Scanner;
+
+public class Exercicio06 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite três números a seu gosto e o programa vai informar qual deles é o maior em eles:");
+		
+		double num1 = scan.nextDouble();
+		double num2 = scan.nextDouble();
+		double num3 = scan.nextDouble();
+		// essa lógica abaixo faz a comparação dos números
+		
+		if (num1 > num2  && num1 > num3 ) {
+			System.out.println("O primeiro número é o maior dentre os três ! ");	
+		} else if (num2 > num3 && num1 > num3) {
+			System.out.println("O segundo  número é o maior dentre os três ! ");
+		}
+		 else if (num3 > num2 && num2 > num1){
+		 System.out.println("O terceiro número é o maior dentre os três ! ");
+		
+	}
+		 else if( num3 > num1 && num1 >num2 ) {
+			 System.out.println("O terceiro número é o maior dentre os três ! ");
+		 }
+		 else if ( num2 > num1 && num3 > num1) {
+			 System.out.println("O segundo  número é o maior dentre os três");
+		 }
+		 else {
+			 System.out.println("Há números iguais, por favor digite números diferentes");		
+}
+		
+}
+}
+		

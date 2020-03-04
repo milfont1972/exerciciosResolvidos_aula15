@@ -1,0 +1,47 @@
+/* 7. Faça um Programa que leia três números e mostre o maior e o menor deles. 
+
+
+*/
+
+
+import java.util.Scanner;
+
+public class Exercicio07 {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite 3 números DIFERENTES entre si o programa vai mostrar qual é o maior e qual é o menor ");
+		
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		int num3 = scan.nextInt();
+		
+		if (num1 > num2  && num1 > num3 ) {
+			System.out.println(" O número " + num1 + " é o maior de todos! ");	
+		} 
+		else if (num2 > num1 && num2 > num3) {
+			System.out.println(" O número " + num2 + " é o maior de todos! ");
+		}
+		
+		else {
+		System.out.println(" O número " + num3 + " é o maior de todos!");
+		
+	}
+		
+		if (num1 < num2  && num1 < num3 ) {
+			System.out.println(" O número " + num1 + " é o menor de todos! ");	
+		} else if (num2 > num1 && num2 > num3) {
+			System.out.println(" O número " + num2 + " é o menor de todos! ");
+		}
+		else {
+		System.out.println(" O número " + num3 + " é o menor de todos!");
+		}
+	}
+}
+		
+	
+		

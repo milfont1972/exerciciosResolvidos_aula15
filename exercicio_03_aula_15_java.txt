@@ -1,0 +1,42 @@
+/*
+3. Faça um Programa que verifique se uma letra digitada é "F" ou "M". 
+Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido. 
+*/
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Exercicio3 {
+
+	public static void main(String[] args) throws IOException {
+		
+		char sexo;		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite o sexo usando F para feminino e M para masculino ");		
+		
+		
+		sexo = (char)System.in.read();
+		
+		if ((sexo == 'F') || (sexo =='f')) {
+			System.out.println("Você digitou F - feminino ");
+			
+			
+		}
+		else if ((sexo == 'M') || (sexo == 'm')) {
+			System.out.println("Você digitou M - masculino ");
+			
+		}
+		else {
+			System.out.println("Sexo não válido");
+			
+		}
+		
+		
+		
+		
+		}
+
+	}
+
+

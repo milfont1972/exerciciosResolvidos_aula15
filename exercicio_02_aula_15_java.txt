@@ -1,0 +1,28 @@
+// 2. Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo. 
+
+import java.util.Scanner;
+
+public class Exercicio02 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite um valor que o programa vai mostrar se ele é negativo ou positivo ");
+		
+		int valor = scan.nextInt();
+		
+		if (valor > 0) {
+			System.out.println(" O valor é positivo ");
+		}
+		else if (valor < 0) {
+			System.out.println(" O valor é negativo ");			
+			
+			
+		} if (valor == 0) {
+			System.out.println("Zero não tem sinal ");
+		}
+
+	}
+
+}
